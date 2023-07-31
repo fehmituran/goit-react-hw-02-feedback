@@ -16,8 +16,6 @@ export default class App extends Component {
     this.setState(state => ({
       [option]: state[option] + 1,
     }));
-
-    console.log(this.state);
   };
 
   countTotalFeedback = () => {
@@ -39,7 +37,6 @@ export default class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    console.log(this.countTotalFeedback());
     return (
       <div>
         <Header />

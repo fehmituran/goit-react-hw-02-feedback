@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import { SectionContainer, Title } from './Section.styled';
 
 const Section = ({ title, children }) => {
@@ -13,4 +13,7 @@ const Section = ({ title, children }) => {
   );
 };
 
+Section.propTypes = {
+    title: PropTypes.string.isRequired,
+  };
 export default Section;
